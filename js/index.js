@@ -96,3 +96,20 @@ bottomContentHeading[2].textContent = siteContent["main-content"]["vision-h4"]
 bottomContentText[0].textContent = siteContent["main-content"]["services-content"]
 bottomContentText[1].textContent = siteContent["main-content"]["product-content"]
 bottomContentText[2].textContent = siteContent["main-content"]["vision-content"]
+
+// Contact section
+
+const contactTitle = document.querySelector('.contact h4')
+const contactItems = document.querySelectorAll('.contact p')
+
+contactTitle.textContent = siteContent.contact["contact-h4"]
+
+contactItems[0].textContent = siteContent.contact.address
+contactItems[1].textContent = siteContent.contact.phone
+contactItems[2].textContent = siteContent.contact.email
+
+// Footer
+
+const copyright = document.querySelector('footer p')
+
+copyright.textContent = siteContent.footer.copyright
